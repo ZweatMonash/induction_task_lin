@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="induction_task_lin" type="turtle_pub.py" name="Publisher" />
+  <node pkg="induction_task_lin" type="turtle_sub" name="Subscriber" output = "screen"/>
+</launch>

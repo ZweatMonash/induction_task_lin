@@ -20,20 +20,20 @@
 #include "induction_task_lin/TurtleInfo.h"
 
 
-void chatterCallback(const induction_task_lin::TurtleInfo::ConstPtr& info_of_turtle)
+void chatterCallback(const induction_task_lin::TurtleInfo::ConstPtr& turtle_info)
 {
-  if(info_of_turtle->quality_of_turtle >= 7){
-  ROS_INFO("Turtle index:  [%d] \t Turtle quality: [%d] \n ",info_of_turtle->index \
-							   ,info_of_turtle->quality_of_turtle);
+  if(turtle_info->quality >= 7){
+  ROS_INFO("Turtle index:  [%d] \t Turtle quality: [%d] \n ",turtle_info->index \
+							   ,turtle_info->quality);
   }else{
-  ROS_INFO("Turtle index:  [%d] \t Turtle quality does not meet the criteria");
+  ROS_INFO("Turtle index:  [%d] \t Turtle quality does not meet the criteria",turtle_info->index );
   }
 
 }
 
 int main(int argc, char **argv)
 {
-  ros::init(argc, argv, "listener");
+  ros::init(argc, argv, "turtle_sub");
   ros::NodeHandle n;
   ros::Subscriber sub = n.subscribe("/induction_task_lin/turtle_talk", 1000, chatterCallback);
   ros::spin();

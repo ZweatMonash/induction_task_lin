@@ -33,7 +33,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(listener src/listener.cpp)
-target_link_libraries(listener ${catkin_LIBRARIES})
-#add_dependencies(listener induction_task_lin_generate_message_cpp)
+add_executable(turtle_sub src/turtle_sub.cpp)
+target_link_libraries(turtle_sub ${catkin_LIBRARIES})
+#add_dependencies(turtle_sub induction_task_lin_generate_message_cpp)
 

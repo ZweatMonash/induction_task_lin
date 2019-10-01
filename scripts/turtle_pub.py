@@ -2,7 +2,7 @@
 # license removed for brevity
 
 """
-<One sentence description>.
+"Publish TurtleInfo"
 
 Author: Zwe Lin Htet
 

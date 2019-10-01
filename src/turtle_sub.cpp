@@ -1,6 +1,6 @@
 /*
 *--**--..--**--..--**--..--**--..--**--..--**--..--**--..--**--..--**--
-* <Subscribe to turtle information from talker.py>. 
+* "Subscribe to turtle information from turtle_pub.py" 
 *
 * Author: Zwe Lin Htet
 *
